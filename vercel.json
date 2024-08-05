@@ -1,17 +1,5 @@
 {
-    
-    "builds": [
-    {
-    "src": "jntuhresults/wsgi.py",
-    "use": "@vercel/python",
-    "config": { "maxLambdaSize": "15mb", "runtime": "python3.10.4" }
-    }
-    ],
-    "routes":[
-    {
-    "src": "/(.*)",
-    "dest": "jntuhresults/wsgi.py"
-    }
-    
-]
-    }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/newsapi" }
+  ]
+}
