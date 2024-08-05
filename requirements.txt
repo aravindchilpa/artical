@@ -1,0 +1,5 @@
+Flask
+newspaper3k
+nltk
+flask-cors
+lxml_html_clean
